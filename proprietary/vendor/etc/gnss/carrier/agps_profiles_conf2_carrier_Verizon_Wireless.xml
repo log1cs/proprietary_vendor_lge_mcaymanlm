@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mtk_agps_profiles maj_ver="1" min_ver="2">
+
+<!-- [LGE_GNSS] LGP_GNSS_R_0016, LGP_GNSS_MTK_MULTI_LOCATION_ID_CONTROL, 2020-10-26, sangeun88.kim, Enable for VZW -->
+
+  <!-- Refer to agps_profiles_conf2.xml for values not provided in this file.
+       cur_supl_profile is supported but other supl_profile are ignored.
+       auto_profile_enable is not supported.
+  -->
+
+  <!-- For SI, OK to use Google SUPL Server on Internet.
+       For NI, Verizon SUPL server will specify its SLP address in SUPL_INIT. -->
+  <cur_supl_profile name="Verizon_Wireless"
+  />
+
+  <cdma_profile name="CDMA1"
+  />
+
+  <agps_setting
+  />
+
+  <gnss_setting
+  />
+
+  <cp_setting
+  />
+
+  <up_setting
+    ut2="10"
+    ut3="30"
+    supl_ver_ser_ind="2"
+    up_lppe_enable="true"
+    force_otdoa_assist_req="true"
+    multiple_location_id_enable="true"
+  />
+
+</mtk_agps_profiles>
