@@ -247,6 +247,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/mcaymanlm/proprietary/vendor/etc/init/tetheroffloadservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tetheroffloadservice.rc \
     vendor/lge/mcaymanlm/proprietary/vendor/etc/init/trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trustonic.rc \
     vendor/lge/mcaymanlm/proprietary/vendor/etc/init/vendor.lge.hardware.lgdata@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.lgdata@1.1-service.rc \
+    vendor/lge/mcaymanlm/proprietary/vendor/etc/init/vendor.lge.hardware.powerhint.rescontrol@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.powerhint.rescontrol@2.0-service.rc \
     vendor/lge/mcaymanlm/proprietary/vendor/etc/init/vendor.lge.hardware.vss_ims@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.vss_ims@1.0-service.rc \
     vendor/lge/mcaymanlm/proprietary/vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc \
     vendor/lge/mcaymanlm/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc \
@@ -838,6 +839,7 @@ PRODUCT_PACKAGES += \
     libsysenv \
     libtlcWidevineModularDrm \
     libudf \
+    libvendor_rescontrol \
     libviagpsrpc \
     libwifi-hal-mtk \
     libwpfa \
@@ -859,6 +861,8 @@ PRODUCT_PACKAGES += \
     vendor.lge.hardware.cameraex@1.0 \
     vendor.lge.hardware.lgdata@1.0 \
     vendor.lge.hardware.lgdata@1.1 \
+    vendor.lge.hardware.powerhint.rescontrol@2.0-common \
+    vendor.lge.hardware.powerhint.rescontrol@2.0 \
     vendor.lge.hardware.radio@2.0 \
     vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.frhandler@1.0 \
@@ -922,6 +926,7 @@ PRODUCT_PACKAGES += \
     mtkfusionrild \
     tetheroffloadservice \
     vendor.lge.hardware.lgdata@1.1-service \
+    vendor.lge.hardware.powerhint.rescontrol@2.0-service \
     vendor.lge.hardware.vss_ims@1.0-service \
     vendor.mediatek.hardware.keymaster_attestation@1.1-service \
     vendor.mediatek.hardware.mms@1.6-service \

@@ -16187,6 +16187,38 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libvendor_rescontrol",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvendor_rescontrol.so",
+            ],
+            shared_libs: [
+                "libhwbinder",
+                "vendor.mediatek.hardware.mtkpower@1.0",
+                "vendor.mediatek.hardware.mtkpower@1.1",
+                "libcutils",
+                "libhardware",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libviagpsrpc",
     owner: "lge",
     strip: {
@@ -16897,6 +16929,68 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "vendor.lge.hardware.lgdata@1.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.lge.hardware.powerhint.rescontrol@2.0-common",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.lge.hardware.powerhint.rescontrol@2.0-common.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libbase",
+                "libutils",
+                "libhardware",
+                "libhidlbase",
+                "libtinyxml2",
+                "android.hardware.power@1.0",
+                "vendor.lge.hardware.powerhint.rescontrol@2.0",
+                "libvendor_rescontrol",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.lge.hardware.powerhint.rescontrol@2.0",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.lge.hardware.powerhint.rescontrol@2.0.so",
+            ],
+            shared_libs: [
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -18890,6 +18984,39 @@ cc_prebuilt_binary {
                 "vendor.lge.hardware.lgdata@1.0",
                 "vendor.lge.hardware.lgdata@1.1",
                 "lgdatavendorlib",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.lge.hardware.powerhint.rescontrol@2.0-service",
+    owner: "lge",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.lge.hardware.powerhint.rescontrol@2.0-service",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libbase",
+                "libutils",
+                "libhardware",
+                "libhidlbase",
+                "vendor.lge.hardware.powerhint.rescontrol@2.0",
+                "vendor.lge.hardware.powerhint.rescontrol@2.0-common",
                 "libc++",
                 "libc",
                 "libm",
