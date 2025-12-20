@@ -19538,6 +19538,13 @@ install_symlink {
 }
 
 install_symlink {
+    name: "vendor_firmware_wifi_cfg",
+    soc_specific: true,
+    installed_location: "firmware/wifi.cfg",
+    symlink_target: "/vendor/etc/wifi/wifi.cfg",
+}
+
+install_symlink {
     name: "vendor_lib_libmtk_drvb_so",
     soc_specific: true,
     installed_location: "lib/libmtk_drvb.so",

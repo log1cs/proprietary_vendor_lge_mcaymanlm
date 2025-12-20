@@ -295,6 +295,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/mcaymanlm/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
     vendor/lge/mcaymanlm/proprietary/vendor/etc/virtual-spn-conf-by-imsi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-imsi.xml \
     vendor/lge/mcaymanlm/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
+    vendor/lge/mcaymanlm/proprietary/vendor/etc/wifi/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wifi.cfg \
     vendor/lge/mcaymanlm/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     vendor/lge/mcaymanlm/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/lge/mcaymanlm/proprietary/vendor/firmware/BT_FW.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/BT_FW.cfg \
@@ -944,6 +945,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     vendor_bin_hw_android_hardware_media_c2@1_2-mediatek \
+    vendor_firmware_wifi_cfg \
     vendor_lib_libmtk_drvb_so \
     vendor_lib64_hw_vulkan_mt6885_so \
     vendor_lib64_hw_gatekeeper_default_so \
