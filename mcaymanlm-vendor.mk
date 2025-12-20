@@ -838,6 +838,7 @@ PRODUCT_PACKAGES += \
     libtlcWidevineModularDrm \
     libudf \
     libviagpsrpc \
+    libwifi-hal-mtk \
     libwpfa \
     libwvhidl \
     libdrmclearkeyplugin \
