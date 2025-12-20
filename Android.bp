@@ -18811,6 +18811,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/mtkfusionrild",
             ],
             shared_libs: [
+                "libutils-v32",
                 "liblog",
                 "libcutils",
                 "librilfusion",
