@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AudioParam>
+	<ParamTree>
+		<Param path="smartpa_nxp_tfa9878" param_id="0"/>
+	</ParamTree>
+	<ParamUnitPool>
+		<ParamUnit param_id="0">
+			<Param name="have_dsp" value="2"/>
+			<Param name="is_alsa_codec" value="1"/>
+			<Param name="chip_delay_us" value="22000,22000"/>
+			<Param name="supported_rate_list" value="8000,11025,12000,16000,22050,24000,32000,44100,48000"/>
+			<Param name="spk_lib_path" value="libnxp_extamp_intf.so"/>
+			<Param name="spk_lib64_path" value="libnxp_extamp_intf.so"/>
+			<Param name="codec_ctl_name" value=""/>
+			<Param name="is_apll_needed" value="1"/>
+			<Param name="i2s_set_stage" value="4"/>
+		</ParamUnit>
+	</ParamUnitPool>
+</AudioParam>
